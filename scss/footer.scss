@@ -1,0 +1,101 @@
+footer {
+  background-color: #000;
+  padding-top: 6%;
+  .container-fluid {
+    .main-row {
+      margin-bottom: 120px;
+    }
+    .bottom {
+      border-top: 1px solid #ffffff26;
+      padding-top: 22px;
+      margin-top: 50px;
+      @media (max-width: 575px) {
+        text-align: center;
+      }
+      p {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.55);
+        @media (max-width: 575px) {
+          margin-bottom: 12px;
+        }
+      }
+      .column-right {
+        text-align: right;
+        @media (max-width: 575px) {
+          text-align: center;
+        }
+        p {
+          a {
+            transition: all 0.3s;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .row {
+      .content {
+        .footer-header {
+          margin-bottom: 20px;
+          .footer-logo {
+            img {
+              width: 270px;
+            }
+          }
+          h4 {
+            font-size: 35px;
+            color: #fff;
+            border-bottom: 1px solid;
+            padding-bottom: 19px;
+            width: fit-content;
+            @media (max-width: 575px) {
+              font-size: 28px;
+            }
+          }
+        }
+        .body-content {
+          p {
+            font-size: 17px;
+            color: rgba(255, 255, 255, 0.55);
+            margin-right: 15px;
+          }
+          .button {
+            @media (max-width: 575px) {
+              margin-bottom: 40px;
+            }
+          }
+
+          .links {
+            li {
+              font-size: 17px;
+              color: rgba(255, 255, 255, 0.55);
+              margin-bottom: 6px;
+              a {
+                transition: all 0.3s;
+                &:hover {
+                  color: #fff;
+                }
+              }
+            }
+          }
+          .contact,
+          .social-links {
+            margin-bottom: 20px;
+            li {
+              font-size: 17px;
+              color: rgba(255, 255, 255, 0.55);
+              margin-bottom: 6px;
+              a {
+                transition: all 0.3s;
+                &:hover {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

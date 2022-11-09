@@ -1,0 +1,253 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a {
+  font-family: $font;
+}
+
+.container-fluid {
+  padding-left: 8%;
+  padding-right: 2%;
+}
+
+section {
+  padding: 5% 0;
+}
+
+body {
+  background-color: $dark;
+}
+
+h1 {
+  font-size: 80px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 70px;
+  color: #fff;
+  font-weight: 800;
+}
+h4 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 7px;
+}
+
+p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 21px;
+  margin-bottom: 28px;
+}
+
+.divider {
+  border-bottom: 3px solid #ffffff9c;
+  width: 14%;
+  margin: 22px 0;
+}
+
+.button {
+  width: fit-content;
+  padding: 14px 40px;
+  border-radius: 58px;
+  a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 100;
+    transition: 0.3s all;
+    img {
+      width: auto;
+    }
+  }
+}
+
+.btn-1 {
+  background: transparent;
+  border-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: none;
+  transition: 0.3s all;
+  &:hover {
+    background: #fff;
+    box-shadow: 0px 0px 22px 0px #ffffff61;
+    margin-top: -8px;
+    a {
+      filter: invert(1);
+    }
+  }
+}
+
+.btn-2 {
+  box-shadow: 0 7px 30px rgb(250 104 32 / 71%);
+  background-image: linear-gradient(130deg, #fa2e48, #fa6820, #fa6820, #fa2e48);
+  background-size: 300% 100%;
+
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    background-position: 100% 0;
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+.btn-3 {
+  position: relative;
+  width: 170px;
+  height: 70px;
+  display: inline-block;
+  margin: 0 auto;
+  text-decoration: none;
+  &:hover {
+    .btn-block {
+      left: 60%;
+    }
+  }
+  a {
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 100;
+    position: relative;
+    display: block;
+    z-index: 5;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-decoration: none;
+  }
+  .btn-block {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0%;
+    z-index: 1;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+}
+
+.social-media {
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+  padding-bottom: 2px;
+  width: 69px;
+  border-right: 1px solid #ffffff29;
+  .social-media-container {
+    padding: 0;
+    position: fixed;
+    top: 40%;
+    width: 45px;
+    .row {
+      justify-content: center;
+      margin: 0;
+      .content {
+        p {
+          font-size: 16px;
+          opacity: 0.8;
+        }
+      }
+      .social-icon {
+        ul {
+          li {
+            margin-bottom: 30px;
+            a {
+              font-size: 17px;
+              color: #bbb;
+              opacity: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.cursor {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  transition: all 200ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  z-index: 8;
+  transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: #fff;
+  opacity: 0.3;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 7;
+  transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.hover {
+  background-image: linear-gradient(272deg, #fa2e48, #fa6820);
+  opacity: 0.5;
+}
+
+.cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+}
+
+.custom-headline-color {
+  font-weight: 800;
+  background-image: linear-gradient(272deg, #fa2e48, #fa6820);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.number {
+  p {
+    font-size: 160px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px #ffffff0d;
+    margin-bottom: -70px;
+  }
+}
+
+.headline {
+  margin-bottom: -15px;
+}
+
+.header-row {
+  margin-bottom: 50px;
+}
+
+.page-header {
+  padding-top: 10%;
+}
