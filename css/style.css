@@ -298,6 +298,38 @@ p {
   padding-top: 10%;
 }
 
+.header-section {
+  padding-top: 150px;
+}
+.header-section .container-fluid .row .text {
+  position: relative;
+}
+.header-section .container-fluid .row .text img {
+  width: auto;
+  position: absolute;
+  right: 0;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+}
+.header-section .container-fluid .row .image-column {
+  border-radius: 500px;
+  padding: 0px !important;
+}
+.header-section .container-fluid .row .image-column img {
+  border-radius: 500px;
+}
+.header-section .container-fluid .row .experiance {
+  margin-top: -196px;
+  margin-left: 90px;
+}
+.header-section .container-fluid .row .experiance img {
+  width: auto;
+}
+
+.circle img {
+  width: auto;
+}
+
 header {
   background-color: rgba(0, 0, 0, 0.28) !important;
   padding: 0px 0;
@@ -631,31 +663,6 @@ header .btn .menu-btn:hover {
   margin-top: 80px;
 }
 
-.experiance-section .container-fluid .row .text {
-  position: relative;
-}
-.experiance-section .container-fluid .row .text img {
-  width: auto;
-  position: absolute;
-  right: 0;
-  filter: brightness(0) invert(1);
-  opacity: 0.7;
-}
-.experiance-section .container-fluid .row .image-column {
-  border-radius: 500px;
-  padding: 0px;
-}
-.experiance-section .container-fluid .row .image-column img {
-  border-radius: 500px;
-}
-.experiance-section .container-fluid .row .experiance {
-  margin-top: -196px;
-  margin-left: 90px;
-}
-.experiance-section .container-fluid .row .experiance img {
-  width: auto;
-}
-
 .about-section .container-fluid .row .image-column {
   padding: 0;
   box-shadow: -35px 35px 0px 0px #f96132;
@@ -690,6 +697,126 @@ header .btn .menu-btn:hover {
 .project-count-section .container-fluid .row .content p {
   font-size: 22px;
   transition: 0.3s all;
+}
+
+.gallery-section .container-fluid .header-row {
+  text-align: center;
+}
+.gallery-section .container-fluid .row main {
+  margin-top: 10px !important;
+}
+.gallery-section .container-fluid .row main #carousel {
+  position: relative;
+  height: 445px;
+  overflow: hidden;
+}
+.gallery-section .container-fluid .row main #carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+.gallery-section .container-fluid .row main #carousel div img {
+  width: 400px;
+  transition: width 1s;
+}
+.gallery-section .container-fluid .row main #carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+.gallery-section .container-fluid .row main #carousel div.hideLeft img {
+  width: 200px;
+}
+.gallery-section .container-fluid .row main #carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+.gallery-section .container-fluid .row main #carousel div.hideRight img {
+  width: 200px;
+}
+.gallery-section .container-fluid .row main #carousel div.prev {
+  z-index: 0;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+  opacity: 0.6;
+  filter: blur(1.5px);
+}
+.gallery-section .container-fluid .row main #carousel div.prev img {
+  width: 300px;
+}
+.gallery-section .container-fluid .row main #carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.3;
+  filter: blur(3px);
+}
+.gallery-section .container-fluid .row main #carousel div.prevLeftSecond img {
+  width: 200px;
+}
+.gallery-section .container-fluid .row main #carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+.gallery-section .container-fluid .row main #carousel div.next {
+  z-index: 0;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+  opacity: 0.6;
+  filter: blur(1.5px);
+}
+.gallery-section .container-fluid .row main #carousel div.next img {
+  width: 300px;
+}
+.gallery-section .container-fluid .row main #carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.3;
+  filter: blur(3px);
+}
+.gallery-section .container-fluid .row main #carousel div.nextRightSecond img {
+  width: 200px;
+}
+.gallery-section .container-fluid .row main .buttons {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 85px;
+}
+.gallery-section .container-fluid .row main .buttons #prev,
+.gallery-section .container-fluid .row main .buttons #next {
+  background: transparent;
+  border: none;
+  color: #9ba0b8;
+  font-size: 28px;
+  transition: all 0.3s;
+}
+.gallery-section .container-fluid .row main .buttons #prev:hover,
+.gallery-section .container-fluid .row main .buttons #next:hover {
+  color: #fff;
+}
+
+.header-section .container-fluid .row .circle {
+  margin-bottom: -235px;
+  width: 40%;
+  text-align: center;
+}
+.header-section .container-fluid .row .image-column {
+  filter: saturate(0);
+}
+
+.single-section .container-fluid .row .content {
+  margin-top: 75px;
+}
+.single-section .container-fluid .row .content .icon img {
+  width: auto;
+  margin-bottom: 25px;
+}
+.single-section .container-fluid .row .image-column {
+  background: none;
+  padding: 0;
 }
 
 footer {

@@ -251,3 +251,42 @@ p {
 .page-header {
   padding-top: 10%;
 }
+
+.header-section {
+  padding-top: 150px;
+  .container-fluid {
+    .row {
+      .text {
+        position: relative;
+        img {
+          width: auto;
+          position: absolute;
+          right: 0;
+
+          filter: brightness(0) invert(1);
+          opacity: 0.7;
+        }
+      }
+      .image-column {
+        border-radius: 500px;
+        padding: 0px !important;
+        img {
+          border-radius: 500px;
+        }
+      }
+      .experiance {
+        margin-top: -196px;
+        margin-left: 90px;
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.circle {
+  img {
+    width: auto;
+  }
+}

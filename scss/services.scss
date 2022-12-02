@@ -1,0 +1,34 @@
+.header-section {
+  .container-fluid {
+    .row {
+      .circle {
+        margin-bottom: -235px;
+        width: 40%;
+        text-align: center;
+      }
+      .image-column {
+        filter: saturate(0);
+      }
+    }
+  }
+}
+
+.single-section {
+  .container-fluid {
+    .row {
+      .content {
+        margin-top: 75px;
+        .icon {
+          img {
+            width: auto;
+            margin-bottom: 25px;
+          }
+        }
+      }
+      .image-column {
+        background: none;
+        padding: 0;
+      }
+    }
+  }
+}
